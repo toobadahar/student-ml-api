@@ -12,7 +12,7 @@ def test_health(client):
     resp = client.get("/health")
     data = resp.get_json()
     assert resp.status_code == 200
-    assert data["status"] == "healthy"
+    assert data["status"] == "wrong"
     assert data["application"] == "student-ml-api"
 
 def test_predict_success(client):
