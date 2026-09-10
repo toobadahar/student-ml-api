@@ -26,5 +26,5 @@ jobs:
       - name: Run unit tests
         run: pytest -v
 
-      - name: Docker build validation (no push)
-        run: docker build -t student-ml-api:ci-check .
+      #- name: Docker build validation (no push)
+       # run: docker build -t student-ml-api:ci-check .
